@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <!-- Box-1 -->
+            <div class="box-1">
+                <div class="star">
+                    <img src="./images/icon-star.svg" alt="star">
+                </div>
+                <h1 class="t-1">How did we do?</h1>
+                <p class="t-2">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <ul class="buttons">
+                    <li>
+                        <input type="button" value="1" aria-label="1" id="1" class="rate">
+                    </li>
+                    <li>
+                        <input type="button" value="2" aria-label="2" id="2" class="rate">
+                    </li>
+                    <li>
+                        <input type="button" value="3" aria-label="3" id="3" class="rate">
+                    </li>
+                    <li>
+                        <input type="button" value="4" aria-label="4" id="4" class="rate">
+                    </li>
+                    <li>
+                        <input type="button" value="5" aria-label="5" id="5" class="rate">
+                    </li>
+                </ul>
+                <input value="Submit" type="submit" id="submit" aria-label="submit"/>
+            </div>
+
+            <!-- Box-2 -->
+            <div class="box-2 d-none">
+                <img src="./images/illustration-thank-you.svg" alt="thank you" class="thankyou">
+                <p class="t-3">You selected <span id="s-rate"></span> out of 5</p>
+                <p class="t-4">Thank you!</p>
+                <p class="t-5">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </div>
+    </main>
+    <!-- JavaScript -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
